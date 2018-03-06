@@ -12,3 +12,16 @@ $('#my-button').on('click',function() {
     $('#my-button').remove(); 
     $('body').addClass('success');
 });
+
+//logging objects to see what is available
+$('article').on('click', function(){
+    console.log(event);
+});
+
+//grab target of the event 
+$('#myAnchor').on('click', function(event){
+    event.preventDefault(); //prevents browser from performing unless 'clicked on' in this instance. 
+    console.log('You clicked a link!');
+});
+
+
